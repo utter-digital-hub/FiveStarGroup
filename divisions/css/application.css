@@ -882,3 +882,20 @@ a {
 body {
     -webkit-tap-highlight-color: transparent;
 }
+
+@media only screen and (max-width: 767px) {
+    #page-hero .copy-02 {
+        padding: 0 20px;
+        /* margin-bottom: 30px; */
+        font-size: 14px;
+    }
+    #page-hero .copy-02 {
+        color: white;
+        /* margin-bottom: 60px; */
+        /* padding: 0 100px; */
+    }
+    .brand-logo {
+        width: -webkit-fill-available !important;
+        margin-top: 60px !important;
+    }
+}

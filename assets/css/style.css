@@ -802,9 +802,16 @@ section {
     margin-bottom: 10px;
 }
 
+.social {
+    padding: 0% 50px;
+}
+
 @media (max-width: 768px) {
     .features .feture-tabs h3 {
         font-size: 28px;
+    }
+    .social {
+        margin: 20px;
     }
 }
 

@@ -562,9 +562,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .header {
-        /* background: #000; */
-    }
     .hero {
         background-color: #131313;
         text-align: center;
@@ -844,6 +841,9 @@ section {
 @media (max-width: 768px) {
     .features .feature-icons h3 {
         font-size: 28px;
+    }
+    .brand-logo img {
+        width: 200px;
     }
 }
 
@@ -1509,11 +1509,6 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-
-.team {
-    /* background: rgb(0, 0, 0); */
-    /* padding: 60px 0; */
-}
 
 .team p {
     color: #fff;
