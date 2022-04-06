@@ -6,15 +6,16 @@
     scroll-behavior: smooth !important;
 }
 
-@font-face {
+
+/* @font-face {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
-}
+} */
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Montserrat';
     color: rgb(31, 37, 66);
 }
 
@@ -31,7 +32,6 @@ a:hover {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     font-family: "Ubuntu", sans-serif;
@@ -64,9 +64,9 @@ section {
 .section-header p {
     margin: 10px 0 0 0;
     padding: 0;
-    font-size: 38px;
+    font-size: 25px;
     line-height: 42px;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #151515;
 }
 
@@ -195,13 +195,13 @@ section {
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 .header.header-scrolled {
     background: #0100a3;
     padding: 15px 0;
-    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.6);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
 }
 
 .header .logo {
@@ -218,7 +218,7 @@ section {
     font-weight: 700;
     letter-spacing: 1px;
     color: #ffffff;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Montserrat';
     margin-top: 3px;
 }
 
@@ -245,6 +245,7 @@ section {
 }
 
 .navbar li {
+    font-family: 'Montserrat';
     position: relative;
     color: #fff !important;
 }
@@ -256,9 +257,10 @@ section {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: "Ubuntu", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 100;
     color: #ffffff;
+    text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -324,7 +326,8 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-    color: #4154f1;
+    /* color: #4154f1; */
+    text-decoration: underline;
 }
 
 .navbar .dropdown:hover>ul {
@@ -485,6 +488,7 @@ section {
 }
 
 .hero h2 {
+    font-family: 'Montserrat';
     color: #ffffff;
     margin: 15px 0 0 0;
     font-size: 26px;
@@ -503,7 +507,8 @@ section {
 }
 
 .hero .btn-get-started span {
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
@@ -564,7 +569,7 @@ section {
 
 @media (max-width: 768px) {
     .header {
-        background: #000;
+        /* background: #000; */
     }
     .hero {
         background-color: #131313;
@@ -602,10 +607,24 @@ section {
 # About
 --------------------------------------------------------------*/
 
+.about {
+    background: url(../img/4128941.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px -50px 0px -50px;
+    /* background-color: rgba(1, 0, 163, 0.9) !important; */
+    /* filter: grayscale(100%); */
+}
+
 .about .content {
-    background-color: #0100a3;
-    padding: 40px;
-    margin-top: -40px;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(1, 0, 163, 0.9) !important; */
+    /* background-color: rgba(0, 0, 0, 0.4) !important; */
+    /* padding: 40px; */
+    /* margin-top: -40px; */
+    /* backdrop-filter: blur(3px); */
+    /* display: flex; */
 }
 
 .about h3 {
@@ -638,7 +657,8 @@ section {
 }
 
 .about .btn-read-more span {
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
@@ -660,22 +680,27 @@ section {
 --------------------------------------------------------------*/
 
 .values {
-    background-color: #000;
+    /* background-color: transparent; */
+    background: url(../img/orange2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .values .box {
     padding: 30px;
-    box-shadow: 0px 0 5px rgba(255, 255, 255, 0.08);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08); */
     text-align: center;
     transition: 0.3s;
     height: 100%;
-    background-color: #000;
-    border: 3px solid #fff;
+    background-color: transparent;
+    /* border: 3px solid rgb(1 0 163); */
+    /* border-left: 2px solid #013289; */
+    border-top: 2px solid #ffffff;
 }
 
 .values .box img {
     /* padding: 30px 50px; */
-    width: 110px;
+    width: 130px;
     transition: 0.5s;
     transform: scale(1.1);
 }
@@ -686,14 +711,14 @@ section {
 
 .values .box h3 {
     font-size: 24px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     margin-bottom: 18px;
 }
 
 .values .section-header p {
     /* font-size: 15px; */
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 
@@ -703,7 +728,7 @@ section {
 } */
 
 .values .box:hover {
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.8);
 }
 
 .values .box:hover img {
@@ -747,7 +772,8 @@ section {
 .counts .count-box p {
     padding: 0;
     margin: 0;
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+    font-family: 'Montserrat';
     font-size: 14px;
 }
 
@@ -757,9 +783,9 @@ section {
 --------------------------------------------------------------*/
 
 .features {
-    background: white url(../img/body-bg.png) no-repeat right top;
+    /* background: white url(../img/body-bg.png) no-repeat right top; */
     margin-top: -120px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .features .feature-box {
@@ -796,7 +822,7 @@ section {
 }
 
 .features .feture-tabs h3 {
-    color: #0100a3;
+    color: #ffffff;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 10px;
@@ -811,7 +837,7 @@ section {
         font-size: 28px;
     }
     .social {
-        margin: 20px;
+        margin: 0 -65px 0 -70px;
     }
 }
 
@@ -855,7 +881,7 @@ section {
 }
 
 .features .feature-icons h3 {
-    color: #0100a3;
+    color: #ffffff;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 20px;
@@ -876,19 +902,19 @@ section {
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 10px 0;
-    color: #0100a3;
+    color: #ffffff;
 }
 
 .features .feature-icons .content .icon-box i {
     font-size: 44px;
     line-height: 44px;
-    color: #0100a3;
+    color: #ffffff;
     margin-right: 15px;
 }
 
 .features .feature-icons .content .icon-box p {
     font-size: 15px;
-    color: #1c1a1a;
+    color: #fff;
 }
 
 
@@ -1125,7 +1151,8 @@ section {
     transition: none;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
+    font-family: 'Montserrat';
     font-weight: 600;
     transition: 0.3s;
     border: 1px solid #4154f1;
@@ -1528,8 +1555,10 @@ section {
 --------------------------------------------------------------*/
 
 .team {
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
+    background: url(../img/team1.jpg) no-repeat center;
     padding: 60px 0;
+    filter: grayscale(100%);
 }
 
 .team p {
@@ -1649,13 +1678,19 @@ section {
 --------------------------------------------------------------*/
 
 .clients .clients-slider .swiper-slide img {
-    opacity: 0.7;
+    opacity: 0.6;
     transition: 0.3s;
-    width: 120px;
+    width: 160px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /* filter: gray; IE */
 }
 
 .clients .clients-slider .swiper-slide img:hover {
-    opacity: 1;
+    opacity: 0.9;
+    -webkit-filter: none;
+    filter: none;
+    /* filter: gray; IE */
 }
 
 .clients .clients-slider .swiper-pagination {
@@ -1747,7 +1782,11 @@ section {
 --------------------------------------------------------------*/
 
 .contact {
-    background-color: #000;
+    /* background-color: #000; */
+    background: url(../img/contact-us-background-image-4.jpg) no-repeat center;
+    background-position: cover;
+    filter: grayscale(100%);
+    background-attachment: fixed;
 }
 
 .contact .section-header p {
@@ -1756,7 +1795,7 @@ section {
 
 .contact .info-box {
     color: #fff;
-    background: #000;
+    background: rgba(0, 0, 0, 0.3);
     padding: 30px;
 }
 
@@ -1781,7 +1820,7 @@ section {
 }
 
 .contact .php-email-form {
-    background: #131313;
+    background: rgba(0, 0, 0, 0.3);
     padding: 30px;
     height: 100%;
 }
